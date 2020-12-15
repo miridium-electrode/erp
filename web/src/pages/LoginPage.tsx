@@ -3,7 +3,7 @@ import React from "react";
 function LoginPage() {
     return (
         <div className="flex justify-center items-center h-screen">
-            <div className="flex flex-row justify-center items-center">
+            <div className="flex flex-col justify-center items-center">
                 <h1 className="text-white">Login</h1>
                 <div className="flex flex-col justify-center items-center">
                     <label htmlFor="uname">Username</label>
