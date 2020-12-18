@@ -1,15 +1,18 @@
 package main
 
 import (
-	"github.com/gin-gonic/gin"
+	"net/http"
+	"log"
+	"miridium_electrode/session/internal/auth"
 )
 
 func main() {
-	r := gin.Default()
-	r.GET("/ping", func(c *gin.Context){
-		c.JSON(200, gin.H{
-			"message": "pong",
-		})
-	})
-	r.Run(":8000")
+	http.HandleFunc("/login", auth.Login)
+
+	log.Println("Serving at http://localhost:8000")
+	err := http.ListenAndServe(":8000", nil)
+	if err != nil {
+		log.Fatal(err)
+		return
+	}
 }
