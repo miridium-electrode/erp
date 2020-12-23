@@ -6,6 +6,7 @@ import (
 	"miridium_electrode/session/internal/auth"
 )
 
+// entry point to app
 func main() {
 	http.HandleFunc("/login", auth.Login)
 
