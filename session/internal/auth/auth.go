@@ -68,6 +68,11 @@ func Login(w http.ResponseWriter, r *http.Request) {
 		  }
 
 		setCookie(w, r, signedToken)
+		var msg string = "welcome " + payload.Username
+		reserr := json.NewEncoder(w).Encode(M{"message": msg})
+		if reserr != nil {
+			http.Error(w, reserr.Error(), http.StatusInternalServerError)
+		}
 	  default:
 		  http.Error(w, "unsupported http method", http.StatusBadRequest)
 	}
