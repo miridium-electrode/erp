@@ -67,11 +67,7 @@ func Login(w http.ResponseWriter, r *http.Request) {
 			  return
 		  }
 
-		  reserr := json.NewEncoder(w).Encode(M{"token": signedToken})
-		  if reserr != nil {
-			  http.Error(w, reserr.Error(), http.StatusBadRequest)
-			  return
-		  }
+		setCookie(w, r, signedToken)
 	  default:
 		  http.Error(w, "unsupported http method", http.StatusBadRequest)
 	}
@@ -92,3 +88,21 @@ func authenticateUser(u, p string) (bool) {
 	return true
 }
 
+// set user cookie in form of jwt
+func setCookie(w http.ResponseWriter, r *http.Request, st string) {
+	cookieName := "token"
+	c := &http.Cookie{}
+
+	if storedCookie, _ := r.Cookie(cookieName); storedCookie != nil {
+		c = storedCookie
+	}
+
+	if c.Value == "" {
+		c := &http.Cookie{
+			Name: cookieName,
+			Value: st,
+			Expires: time.Now().Add(LOGIN_EXPIRATION_DURATION),
+		}
+		http.SetCookie(w, c)
+	}
+}
