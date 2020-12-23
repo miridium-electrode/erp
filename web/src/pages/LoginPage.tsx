@@ -1,4 +1,5 @@
 import React from "react";
+import Background from "../components/Background";
 
 async function getInputField() {
     try {
@@ -20,7 +21,7 @@ async function getInputField() {
 
 function LoginPage() {
     return (
-        <div className="flex justify-center items-center h-screen bg-indigo-900">
+        <Background>
             <div className="flex flex-col justify-center items-center bg-indigo-700 p-8">
                 <h1 className="text-white text-3xl m-4">Login</h1>
                 <div className="flex flex-col justify-center items-center mb-4">
@@ -35,7 +36,7 @@ function LoginPage() {
                 <a href="#" className="text-white mb-2">Forgot password?</a>
                 <a href="#" className="text-white mb-2">Not a user?</a>
             </div>
-        </div>
+        </Background>
     );
 }
 
