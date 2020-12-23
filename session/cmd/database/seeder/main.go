@@ -9,6 +9,7 @@ import (
 	"miridium_electrode/session/internal/model"
 )
 
+// entry point to seeder
 func main() {
 	db, err := gorm.Open(sqlite.Open("/home/arfe/arfchive/personalliking/learn_to_dev/big-project/erp/session/login.db"), &gorm.Config{})
 	if err != nil {
