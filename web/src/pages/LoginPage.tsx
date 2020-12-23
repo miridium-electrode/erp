@@ -7,14 +7,18 @@ async function getInputField() {
         let pwd: string = document.getElementsByTagName('input')[1].value;
         let response = await fetch("http://localhost:8000/login", {
             method: "post",
+            headers: { "Content-Type": "application/json" },
             body: JSON.stringify({"username": uname, "password": pwd})
         });
 
-        let result = await response.json();
-        console.log(result);
+        if(!response.ok) {
+            throw Error(response.statusText);
+        } else {
+            let result = await response.json();
+            console.log(result);
+        }
     }
     catch(e) {
-        console.error("invalid username or password");
         console.log(e);
     }
 }
