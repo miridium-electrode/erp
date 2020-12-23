@@ -1,10 +1,21 @@
 import React from "react";
 
-function getInputField() {
-    let foo: string = document.getElementsByTagName('input')[0].value;
-    let foo1: string = document.getElementsByTagName('input')[1].value;
-    console.log(foo);
-    console.log(foo1);
+async function getInputField() {
+    try {
+        let uname: string = document.getElementsByTagName('input')[0].value;
+        let pwd: string = document.getElementsByTagName('input')[1].value;
+        let response = await fetch("http://localhost:8000/login", {
+            method: "post",
+            body: JSON.stringify({"username": uname, "password": pwd})
+        });
+
+        let result = await response.json();
+        console.log(result);
+    }
+    catch(e) {
+        console.error("invalid username or password");
+        console.log(e);
+    }
 }
 
 function LoginPage() {
