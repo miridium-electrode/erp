@@ -3,10 +3,21 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import LoginPage from "./pages/LoginPage";
+import AbsenPage from './pages/AbsenPage';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <LoginPage/>
+    <React.StrictMode>
+        <BrowserRouter>
+            <Switch>
+                <Route exact path="/">
+                    <LoginPage/>
+                </Route>
+                <Route path="/absen">
+                    <AbsenPage/>
+                </Route>
+            </Switch>
+        </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );
