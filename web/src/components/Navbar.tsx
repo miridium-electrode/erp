@@ -2,8 +2,11 @@ import React from 'react';
 
 function Navbar() {
     return (
-        <div className="container mx-auto bg-purple-300 p-5 w-full">
+        <div className="bg-purple-300 p-4 w-full">
             <nav className="flex justify-between">
+                <div>
+                    Item
+                </div>
                 <ul className="flex flex-row">
                     <li className="pr-5">Absensi</li>
                     <li className="pr-5">Users</li>

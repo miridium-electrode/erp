@@ -25,7 +25,7 @@ async function getInputField() {
 
 function LoginPage() {
     return (
-        <Background>
+        <Background forPage="login">
             <div className="flex flex-col justify-center items-center bg-indigo-700 p-8">
                 <h1 className="text-white text-3xl m-4">Login</h1>
                 <div className="flex flex-col justify-center items-center mb-4">
