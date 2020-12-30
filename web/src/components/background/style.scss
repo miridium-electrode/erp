@@ -1,0 +1,15 @@
+.backlogin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(49, 46, 129, 1);
+}
+
+.backother {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    background-color: rgba(49, 46, 129, 1);
+}

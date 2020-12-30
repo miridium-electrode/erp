@@ -1,0 +1,15 @@
+.navwrapper {
+    background-color: rgba(196, 181, 253, 1);
+    padding: 1rem;
+    nav {
+        display: flex;
+        justify-content: space-between;
+        ul {
+            display: flex;
+            flex-direction: row;
+            .special-li {
+                padding-right: 1.25rem;
+            }
+        }
+    }
+}
