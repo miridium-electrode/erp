@@ -1,3 +1,5 @@
+$mobile: 636px;
+
 .loginbox {
     display: flex;
     flex-direction: column;
@@ -7,34 +9,66 @@
     padding: 2rem;
     h1 {
         color: white;
+        font-weight: bold;
         font-size: 1.875rem;
         line-height: 2.25rem;
-        margin: 1rem;
+        margin: 1.5rem;
+        @media(max-width: $mobile) {
+            margin-bottom: 2rem;
+            font-size: 2.8rem;
+        }
     }
     .field {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-bottom: 1rem;
+        margin-bottom: 1.5rem;
         label{
             color: white;
+            padding-bottom: 0.3rem;
+            @media(max-width: $mobile) {
+                font-size: 1.4rem;
+            }
         }
         input {
+            border: none;
             background-color: rgba(99, 102, 241, 1);
+            @media(max-width: $mobile) {
+                width: 80vw;
+                padding-bottom: 1rem;
+            }
         }
     }
     button {
+        border: none;
         color: white;
         background-color: rgba(110, 231, 183, 1);
-        padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
-        padding-left: 5rem;
-        padding-right: 5rem;
-        margin-bottom: 1rem;
+        padding: {
+            top: 0.5rem;
+            bottom: 0.5rem;
+            left: 5rem;
+            right: 5rem;
+        }
+        margin: {
+            top: 1rem;
+            bottom: 1rem;
+        }
+        @media(max-width: $mobile) {
+            width: 80vw;
+            font-size: 1.5rem;
+        }
     }
     a {
         color: white;
         margin-bottom: 1rem;
+        @media(max-width: $mobile) {
+            font-size: 1.4rem;
+        }
+    }
+
+    @media(max-width: $mobile) {
+        width: 100vw;
+        height: 100vh;
     }
 }
