@@ -8,7 +8,12 @@ function AbsenPage() {
         <Background forPage="other">
             <Navbar/>
             <Container forPage="absen">
-                <div></div>
+                <div className="box1">
+                    
+                </div>
+                <div className="box2">
+                    
+                </div>
             </Container>
         </Background>
     );
