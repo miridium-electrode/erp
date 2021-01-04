@@ -1,6 +1,14 @@
+$mobile: 636px;
+
 .container-absen {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     background-color: rgba(99, 102, 241, 1);
     margin: auto;
     width: 90%;
     height: 80%;
+    @media(max-width: $mobile) {
+        width: 100vw;
+        height: 100vh;
+    }
 }

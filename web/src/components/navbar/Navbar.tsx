@@ -5,14 +5,12 @@ function Navbar() {
     return (
         <div className="navwrapper">
             <nav>
-                <div>
-                    Item
-                </div>
                 <ul>
-                    <li className="special-li">Absensi</li>
-                    <li className="special-li">Users</li>
-                    <li className="special-li">Laporan</li>
+                    <li>Absensi</li>
+                    <li>Users</li>
+                    <li>Laporan</li>
                     <li>Pesan</li>
+                    <li className="special-li">username</li>
                 </ul>
             </nav>
         </div>

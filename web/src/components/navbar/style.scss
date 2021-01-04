@@ -1,14 +1,23 @@
+$mobile: 636px;
+
 .navwrapper {
     background-color: rgba(196, 181, 253, 1);
     padding: 1rem;
     nav {
-        display: flex;
-        justify-content: space-between;
         ul {
-            display: flex;
-            flex-direction: row;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            li {
+                @media(max-width: $mobile) {
+                    justify-self: center;
+                    margin: 0.15rem;
+                }
+            }
             .special-li {
-                padding-right: 1.25rem;
+                justify-self: end;
+                @media(max-width: $mobile) {
+                    justify-self: center;
+                }
             }
         }
     }
