@@ -13,6 +13,12 @@ function Container(props: Props) {
                 {props.children}
             </div>
         );
+    } else if(props.forPage === "karyawantabel") {
+        return (
+            <div className="container-karyawan-tabel">
+                {props.children}
+            </div>
+        );
     } else {
         return null;
     }
