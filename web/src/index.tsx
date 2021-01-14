@@ -5,6 +5,7 @@ import reportWebVitals from './reportWebVitals';
 import LoginPage from "./pages/login-page/LoginPage";
 import AbsenPage from './pages/absen-page/AbsenPage';
 import Detailabsen from './pages/detail-absen-page/Detailabsen';
+import Profileinfo from './pages/profile-info-page/Profileinfo';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 ReactDOM.render(
@@ -19,6 +20,9 @@ ReactDOM.render(
                 </Route>
                 <Route path="/detaila">
                     <Detailabsen/>
+                </Route>
+                <Route path="/profilei">
+                    <Profileinfo/>
                 </Route>
             </Switch>
         </BrowserRouter>
