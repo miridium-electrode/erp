@@ -19,7 +19,13 @@ function Container(props: Props) {
                 {props.children}
             </div>
         );
-    } else {
+    } else if(props.forPage === "profileinfo" || props.forPage === "usersettings") {
+        return (
+            <div className="container-account">
+                {props.children}
+            </div>
+        );
+    }  else {
         return null;
     }
 }

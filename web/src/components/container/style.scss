@@ -20,3 +20,12 @@ $mobile: 636px;
 .container-karyawan-tabel {
     @include stand-cont;
 }
+
+.container-account {
+    @include stand-cont;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    @media(max-width: $mobile) {
+        grid-template-columns: 1fr;
+    }
+}
