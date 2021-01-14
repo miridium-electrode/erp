@@ -22,7 +22,7 @@ function AbsenPage() {
                         <option value="dinasdalam">Dinas Dalam Kota</option>
                         <option value="alpha">Alpha</option>
                     </select>
-                    <input type="textarea" name="keterangan"/>
+                    <textarea></textarea>
                     <input type="file" name="lapiran"/>
                     <button>Submit</button>
                 </div>
