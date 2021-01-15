@@ -1,26 +1,5 @@
 $input-color: #2e4468;
 
-.box1 {
-    display: flex;
-    flex-direction: column;
-    margin: 1rem;
-    padding: 1rem;
-    border: 0.1px solid white;
-    a {
-        border-bottom: 0.1px solid white;
-        padding: {
-            top: 1rem;
-            right: 1rem;
-            bottom: 1rem;
-        }
-        text-decoration: none;
-        color: white;
-        &:hover {
-            text-decoration: underline;
-        }
-    }
-}
-
 .box2 {
     display: flex;
     flex-direction: column;

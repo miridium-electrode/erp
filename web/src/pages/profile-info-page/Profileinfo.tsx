@@ -2,6 +2,7 @@ import React from 'react';
 import Background from '../../components/background/Background';
 import Navbar from '../../components/navbar/Navbar';
 import Container from '../../components/container/Container';
+import Usb1 from '../../components/user-settings-box-1/Usb1';
 import './style.scss';
 
 function Profileinfo() {
@@ -9,12 +10,7 @@ function Profileinfo() {
         <Background forPage="other">
             <Navbar/>
             <Container forPage="profileinfo">
-                <div className="box1">
-                    <div className="image">
-                    </div>
-                    <a href="#" className="link1">Profile info</a>
-                    <a href="#" className="link2">User settings</a>
-                </div>
+                <Usb1/>
                 <div className="box2">
                     <div className="field">
                         <label htmlFor="name">
