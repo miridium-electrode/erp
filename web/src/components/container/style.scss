@@ -21,7 +21,16 @@ $mobile: 636px;
     @include stand-cont;
 }
 
-.container-account {
+.container-profile-info {
+    @include stand-cont;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    @media(max-width: $mobile) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.container-user-settings {
     @include stand-cont;
     display: grid;
     grid-template-columns: 1fr 2fr;
