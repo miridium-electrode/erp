@@ -6,6 +6,7 @@ import LoginPage from "./pages/login-page/LoginPage";
 import AbsenPage from './pages/absen-page/AbsenPage';
 import Detailabsen from './pages/detail-absen-page/Detailabsen';
 import Profileinfo from './pages/profile-info-page/Profileinfo';
+import Usersettings from './pages/user-settings-page/Usersettings';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 ReactDOM.render(
@@ -23,6 +24,9 @@ ReactDOM.render(
                 </Route>
                 <Route path="/profilei">
                     <Profileinfo/>
+                </Route>
+                <Route path="/userse">
+                    <Usersettings/>
                 </Route>
             </Switch>
         </BrowserRouter>
