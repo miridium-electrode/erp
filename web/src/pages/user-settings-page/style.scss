@@ -17,7 +17,12 @@ $input-color: #2e4468;
         input {
             border: none;
             background-color: $input-color;
-            color: white
+            color: white;
+            padding: {
+                top: 5px;
+                left: 5px;
+                bottom: 5px;
+            }
         }
     }
     .twobtn {
@@ -26,6 +31,22 @@ $input-color: #2e4468;
         margin: {
             top: auto;
             left: auto;
+        }
+        button {
+            &:nth-child(1) {
+                border: none;
+                color: white;
+                background-color: red;
+                padding: 1rem;
+                margin: 1rem;
+            }
+            &:nth-child(2) {
+                border: none;
+                color: white;
+                background-color: green;
+                padding: 1rem;
+                margin: 1rem;
+            }
         }
     }
 }
