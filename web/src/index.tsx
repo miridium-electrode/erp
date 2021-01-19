@@ -7,6 +7,7 @@ import AbsenPage from './pages/absen-page/AbsenPage';
 import Detailabsen from './pages/detail-absen-page/Detailabsen';
 import Profileinfo from './pages/profile-info-page/Profileinfo';
 import Usersettings from './pages/user-settings-page/Usersettings';
+import Jadwalkerja from './pages/jadwal-kerja-page/Jadwalkerja';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 ReactDOM.render(
@@ -27,6 +28,9 @@ ReactDOM.render(
                 </Route>
                 <Route path="/userse">
                     <Usersettings/>
+                </Route>
+                <Route path="/jk">
+                    <Jadwalkerja/>
                 </Route>
             </Switch>
         </BrowserRouter>
