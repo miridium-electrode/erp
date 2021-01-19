@@ -43,6 +43,12 @@ function Container(props: Props) {
                 {props.children}
             </div>
         );
+    } else if(props.forPage === "companyprofile") {
+        return (
+            <div className="container-company-profile">
+                {props.children}
+            </div>
+        );
     } else {
         return null;
     }
