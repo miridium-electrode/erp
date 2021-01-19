@@ -31,6 +31,12 @@ function Container(props: Props) {
                 {props.children}
             </div>
         );
+    } else if(props.forPage === "jadwalkerja") {
+        return (
+            <div className="container-jadwal-kerja">
+                {props.children}
+            </div>
+        );
     } else {
         return null;
     }

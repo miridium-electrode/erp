@@ -38,3 +38,9 @@ $mobile: 636px;
         grid-template-columns: 1fr;
     }
 }
+
+.container-jadwal-kerja {
+    @include stand-cont;
+    display: flex;
+    flex-direction: row;
+}
