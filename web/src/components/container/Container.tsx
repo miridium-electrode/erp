@@ -37,6 +37,12 @@ function Container(props: Props) {
                 {props.children}
             </div>
         );
+    } else if(props.forPage === "jadwalkerjaform") {
+        return (
+            <div className="container-jadwal-kerja-form">
+                {props.children}
+            </div>
+        );
     } else {
         return null;
     }
