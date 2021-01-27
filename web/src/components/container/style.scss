@@ -11,6 +11,12 @@ $mobile: 636px;
     }
 }
 
+@mixin cont-col {
+    @include stand-cont;
+    display: flex;
+    flex-direction: column;
+}
+
 .container-absen {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -55,4 +61,32 @@ $mobile: 636px;
     @include stand-cont;
     display: flex;
     flex-direction: row;
+}
+
+.container-jkk {
+    @include cont-col;
+}
+
+.container-jkk-form {
+    @include cont-col;
+}
+
+.container-hierarchy {
+    @include cont-col;
+}
+
+.container-users-list {
+    @include cont-col;
+}
+
+.container-laporan {
+    @include cont-col;
+}
+
+.container-pesan {
+    @include cont-col;
+}
+
+.container-show {
+    @include cont-col;
 }

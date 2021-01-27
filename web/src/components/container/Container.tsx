@@ -49,6 +49,48 @@ function Container(props: Props) {
                 {props.children}
             </div>
         );
+    } else if(props.forPage === "jkk") {
+        return (
+            <div className="container-jkk">
+                {props.children}
+            </div>
+        );
+    } else if(props.forPage === "jkkform") {
+        return (
+            <div className="container-jkk-form">
+                {props.children}
+            </div>
+        );
+    } else if(props.forPage === "internalhierarchy") {
+        return (
+            <div className="container-hierarchy">
+                {props.children}
+            </div>
+        );
+    } else if(props.forPage === "userslist") {
+        return (
+            <div className="container-users-list">
+                {props.children}
+            </div>
+        );
+    } else if(props.forPage === "laporan") {
+        return (
+            <div className="container-laporan">
+                {props.children}
+            </div>
+        );
+    } else if(props.forPage === "pesan") {
+        return (
+            <div className="container-pesan">
+                {props.children}
+            </div>
+        );
+    } else if(props.forPage === "show") {
+        return (
+            <div className="container-show">
+                {props.children}
+            </div>
+        );
     } else {
         return null;
     }
