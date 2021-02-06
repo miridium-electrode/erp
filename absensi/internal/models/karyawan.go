@@ -9,7 +9,6 @@ type Karyawan struct {
 	TglLahir time.Time
 	Alamat string
 	IdJbt string
-	IdTempatKerja string
 	TglMasuk time.Time
 	TglKeluar time.Time
 }
