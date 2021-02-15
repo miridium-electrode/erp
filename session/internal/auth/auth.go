@@ -4,7 +4,7 @@ import (
 	"net/http"
 	"encoding/json"
 	"time"
-	"miridium_electrode/session/internal/dbconn"
+	"miridium_electrode/session/internal/dbquery"
 	jwt "github.com/dgrijalva/jwt-go"
 )
 
@@ -14,6 +14,7 @@ type M map[string]interface{}
 // Representation of jwt data
 type MyClaim struct {
 	jwt.StandardClaims
+	ID string
 	Username string `json:"username"`
 }
 
@@ -42,17 +43,23 @@ func Login(w http.ResponseWriter, r *http.Request) {
 			  return
 		  }
 
-		  ok := authenticateUser(payload.Username, payload.Password)
+		ok := dbquery.DbAuthenticateUser(payload.Username, payload.Password)
 		  if !ok == true {
 			  http.Error(w, "invalid username or password", http.StatusBadRequest)
 			  return
 		  }
 
+		id, exist := dbquery.DbGetID(payload.Username, payload.Password)
+		if !exist == true {
+			http.Error(w, "invalid username or password", http.StatusBadRequest)
+			return
+		}
 		  claims := MyClaim {
 			  StandardClaims: jwt.StandardClaims{
 				  Issuer:    APPLICATION_NAME,
 				  ExpiresAt: time.Now().Add(LOGIN_EXPIRATION_DURATION).Unix(),
 			  },
+			  ID: id,
 			  Username: payload.Username,
 		  }
 
@@ -78,20 +85,6 @@ func Login(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
-// take username and password from request body and than compare it to database
-// return false if username and password is invalid
-func authenticateUser(u, p string) (bool) {
-	res := struct{
-		username string
-		password string
-	}{}
-	dbres := dbconn.Startconn().Table("logins").Select("username", "password").Where("username = ? AND password = ?", u, p).Scan(&res)
-	if dbres.RowsAffected != 1 {
-		return false
-	}
-
-	return true
-}
 
 // set user cookie in form of jwt
 func setCookie(w http.ResponseWriter, r *http.Request, st string) {
