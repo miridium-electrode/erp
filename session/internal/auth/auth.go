@@ -1,12 +1,14 @@
 package auth
 
 import (
-	"net/http"
+	"bytes"
 	"encoding/json"
+	"errors"
 	"miridium_electrode/session/internal/dbquery"
+	"net/http"
 )
 
-// Accept post request of username and password, and then return a cookie of json web token
+// Accept username and password header, then validate it
 func Login(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Access-Control-Allow-Origin", "*")
 	w.Header().Set("Access-Control-Allow-Methods", "OPTIONS, POST")
@@ -36,8 +38,14 @@ func Login(w http.ResponseWriter, r *http.Request) {
 			return
 		}
 
-		cookieComp := []string{id, username}
-		setCookie(w, r, cookieComp)
+		cookieComp := map[string]interface{}{
+			"id": id,
+			"username": username,
+		}
+		serr := setSession(cookieComp)
+		if serr != nil {
+			http.Error(w, serr.Error(), http.StatusInternalServerError)
+		}
 		var msg string = "welcome " + username
 		mjson := map[string]interface{}{"message": msg}
 		reserr := json.NewEncoder(w).Encode(mjson)
@@ -50,18 +58,20 @@ func Login(w http.ResponseWriter, r *http.Request) {
 }
 
 
-// set user cookie
-func setCookie(w http.ResponseWriter, r *http.Request, st []string) {
-	c1 := &http.Cookie{
-		Name: "uid",
-		Value: st[0],
+// set user session
+func setSession(st interface{}) error {
+	reqbody, err := json.Marshal(st)
+	if err != nil {
+		return err
+	}
+	resp, err := http.Post("http://localhost:8081", "application/json", bytes.NewBuffer(reqbody))
+	if err != nil {
+		return err
 	}
 
-	c2 := &http.Cookie {
-		Name: "username",
-		Value: st[1],
+	if resp.StatusCode != 200 {
+		return errors.New("Something is wrong")
 	}
-
-	http.SetCookie(w, c1)
-	http.SetCookie(w, c2)
+	defer resp.Body.Close()
+	return nil
 }
