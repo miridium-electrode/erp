@@ -7,7 +7,7 @@ import './style.scss';
 function Jkk() {
     return (
         <Background forPage="other">
-            <Navbar/>
+            <Navbar forPage="e"/>
             <Container forPage="jkk">
                 <div className="helper-box">
                     <select></select>

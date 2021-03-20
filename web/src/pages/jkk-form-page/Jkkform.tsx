@@ -8,7 +8,7 @@ import './style.scss';
 function Jkkform() {
     return (
         <Background forPage="other">
-            <Navbar/>
+            <Navbar forPage="e"/>
             <Container forPage="jkkform">
                 <h2></h2>
                 <h3></h3>

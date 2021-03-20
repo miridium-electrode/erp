@@ -6,7 +6,7 @@ import Container from '../../components/container/Container';
 function Jadwalkerjaform() {
     return (
         <Background forPage="other">
-            <Navbar/>
+            <Navbar forPage="e"/>
             <Container forPage="jadwalkerjaform">
                 <h2></h2>
                 <div></div>

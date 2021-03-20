@@ -7,7 +7,7 @@ import './style.scss';
 function AbsenPage() {
     return (
         <Background forPage="other">
-            <Navbar/>
+			<Navbar forPage="karyawan"/>
             <Container forPage="absen">
                 <div className="box1">
                     <button className="masuk">Masuk</button>

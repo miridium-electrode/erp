@@ -7,7 +7,7 @@ import './style.scss';
 function Jadwalkerja() {
     return (
         <Background forPage="jadwalkerja">
-        <Navbar/>
+        <Navbar forPage="e"/>
         <Container forPage="jadwalkerja">
             <div className="buttons">
                 <button>+</button>

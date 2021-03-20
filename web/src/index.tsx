@@ -2,37 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import LoginPage from "./pages/login-page/LoginPage";
-import AbsenPage from './pages/absen-page/AbsenPage';
-import Detailabsen from './pages/detail-absen-page/Detailabsen';
-import Profileinfo from './pages/profile-info-page/Profileinfo';
-import Usersettings from './pages/user-settings-page/Usersettings';
-import Jadwalkerja from './pages/jadwal-kerja-page/Jadwalkerja';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+// import LoginPage from "./pages/login-page/LoginPage";
+import AbsenPage from "./pages/absen-page/AbsenPage";
+import { BrowserRouter } from 'react-router-dom';
 
 ReactDOM.render(
     <React.StrictMode>
         <BrowserRouter>
-            <Switch>
-                <Route exact path="/">
-                    <LoginPage/>
-                </Route>
-                <Route path="/absen">
-                    <AbsenPage/>
-                </Route>
-                <Route path="/detaila">
-                    <Detailabsen/>
-                </Route>
-                <Route path="/profilei">
-                    <Profileinfo/>
-                </Route>
-                <Route path="/userse">
-                    <Usersettings/>
-                </Route>
-                <Route path="/jk">
-                    <Jadwalkerja/>
-                </Route>
-            </Switch>
+            <AbsenPage/>
         </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')

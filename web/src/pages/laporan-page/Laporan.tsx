@@ -6,7 +6,7 @@ import Container from '../../components/container/Container';
 function Laporan() {
     return (
         <Background forPage="other">
-            <Navbar/>
+            <Navbar forPage="karyawan"/>
             <Container forPage="laporan">
                 <div className="top-feature">
                     <div>Bulan</div>

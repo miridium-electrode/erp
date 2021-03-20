@@ -41,8 +41,8 @@ function LoginPage() {
                     <input type="password" name="pwd" className="bg-indigo-500" />
                 </div>
                 <button onClick={getInputField}>Login</button>
-                <a href="#">Forgot password?</a>
-                <a href="#">Not a user?</a>
+				{/*<a href="#">Forgot password?</a>
+				   <a href="#">Not a user?</a>*/}
             </div>
         </Background>
     );

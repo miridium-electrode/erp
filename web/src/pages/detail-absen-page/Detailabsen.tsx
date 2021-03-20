@@ -7,7 +7,7 @@ import './style.scss';
 function Detailabsen() {
     return (
         <Background forPage="other">
-            <Navbar/>
+            <Navbar forPage="karyawan"/>
             <Container forPage="karyawantabel">
                 <table>
                     <tr>

@@ -8,7 +8,7 @@ import './style.scss';
 function Usersettings() {
     return (
         <Background forPage="other">
-            <Navbar/>
+            <Navbar forPage="karyawan"/>
             <Container forPage="usersettings">
                 <Usb1/>
                 <div className="box2diff">

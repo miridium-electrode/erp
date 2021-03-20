@@ -6,7 +6,7 @@ import Container from '../../components/container/Container';
 function Userslist() {
     return (
         <Background forPage="other">
-            <Navbar/>
+            <Navbar forPage="e"/>
             <Container forPage="userslist">
                 <div className="part1">
                     <div>Bulan</div>

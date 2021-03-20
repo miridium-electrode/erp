@@ -8,7 +8,7 @@ import './style.scss';
 function Profileinfo() {
     return (
         <Background forPage="other">
-            <Navbar/>
+            <Navbar forPage="e"/>
             <Container forPage="profileinfo">
                 <Usb1/>
                 <div className="box2">

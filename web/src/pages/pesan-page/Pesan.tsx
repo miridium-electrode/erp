@@ -6,7 +6,7 @@ import Container from '../../components/container/Container';
 function Pesan() {
     return (
         <Background forPage="other">
-            <Navbar/>
+            <Navbar forPage="karyawan"/>
             <Container forPage="pesan">
                 <div className="checkbox">
                     

@@ -6,7 +6,7 @@ import Container from '../../components/container/Container';
 function Hierarchy() {
     return (
         <Background forPage="other">
-            <Navbar/>
+            <Navbar forPage="e"/>
             <Container forPage="internalhierarchy">
                 <div className="field">
                     <label></label>

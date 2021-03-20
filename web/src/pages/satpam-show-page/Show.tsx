@@ -6,7 +6,7 @@ import Container from '../../components/container/Container';
 function Show() {
     return (
         <Background forPage="other">
-            <Navbar/>
+            <Navbar forPage="e"/>
             <Container forPage="show">
                 <div className="select-menu"></div>
                 <table>
