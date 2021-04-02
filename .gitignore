@@ -8,20 +8,31 @@ web/.pnp.js
 # testing
 web/coverage
 
+# next.js
+web/.next/
+web/out/
+
 # production
 web/build
 
 # misc
 web/.DS_Store
+web/*.pem
+
+# debug
+web/npm-debug.log*
+web/yarn-debug.log*
+web/yarn-error.log*
+
+# local env files
 web/.env.local
 web/.env.development.local
 web/.env.test.local
 web/.env.production.local
-session/config.yaml
-*/.env
-*/*.db
 
-web/npm-debug.log*
-web/yarn-debug.log*
-web/yarn-error.log*
-web/.eslintcache
+# vercel
+web/.vercel
+
+session/config.yaml
+session/.env
+session/*.db
