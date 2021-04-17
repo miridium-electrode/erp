@@ -1,8 +1,6 @@
-type prop = {
-    children: React.ReactNode
-};
+import { BasicProp } from '@lib/types';
 
-function Background(props: prop) {
+function Background(props: BasicProp) {
     return (
         <div>
             {props.children}
