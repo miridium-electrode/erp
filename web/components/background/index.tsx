@@ -4,8 +4,18 @@ type prop = {
 
 function Background(props: prop) {
     return (
-        <div className="bg">
+        <div>
             {props.children}
+
+            <style jsx>{`
+                div {
+                    width: 100vw;
+                    height: 100vh;
+                    display: grid;
+                    place-items: center;
+                }
+            `
+            }</style>
         </div>
     )
 }
