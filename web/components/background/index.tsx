@@ -14,8 +14,7 @@ function Background(props: prop) {
                     display: grid;
                     place-items: center;
                 }
-            `
-            }</style>
+            `}</style>
         </div>
     )
 }
