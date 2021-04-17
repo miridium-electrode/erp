@@ -16,7 +16,7 @@ function Background(props: prop) {
                 }
             `}</style>
         </div>
-    )
+    );
 }
 
 export default Background;
