@@ -1,6 +1,27 @@
 import { BasicProp } from '@lib/types';
 
-function Container(props: BasicProp) {
+interface ContainerProp extends BasicProp {
+    forPage?: string;
+}
+
+function Container(props: ContainerProp) {
+    if(props.forPage === "sign-star") {
+        return (
+            <div>
+                {props.children}
+
+                <style jsx>{`
+                    div {
+                        width: 40 vw;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                `}</style>
+            </div>
+        );
+    }
     return (
         <div>
             {props.children}
