@@ -4,8 +4,8 @@ function LandingPage() {
             <header>
                 <a href="#" className="logo">A+ERP</a>
                 <div className="pseudo-buttons">
-                    <a href="#">Sign In</a>
-                    <a href="#" className="sign-up">Try It</a>
+                    <a href="/login">Sign In</a>
+                    <a href="/signup" className="sign-up">Try It</a>
                 </div>
                 <ul>
                     <li>
