@@ -12,7 +12,7 @@ function Container(props: ContainerProp) {
 
                 <style jsx>{`
                     div {
-                        width: 40 vw;
+                        width: 25vw;
                         display: flex;
                         flex-direction: column;
                         justify-content: center;
