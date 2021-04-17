@@ -8,7 +8,7 @@ function Background(props: BasicProp) {
             <style jsx>{`
                 div {
                     width: 100vw;
-                    height: 100vh;
+                    height: 90vh;
                     display: grid;
                     place-items: center;
                 }
