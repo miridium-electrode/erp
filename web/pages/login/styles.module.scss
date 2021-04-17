@@ -13,6 +13,8 @@
     text-decoration: none;
     cursor: pointer;
     color: white;
+    padding: .5rem 1rem;
+    margin-bottom: 2rem;    
     &:hover {
         background-color: hsl(198, 59%, 56%);
     }
@@ -20,9 +22,4 @@
 
 .useful_links {
     margin-bottom: 1rem;
-}
-
-.login_btn {
-    padding: .5rem 1rem;
-    margin-bottom: 2rem;
 }
