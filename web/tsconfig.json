@@ -21,7 +21,9 @@
     "paths": {
       "@components": ["components/*"],
       "@styles": ["styles/*"],
-      "@lib": ["lib/*"]
+      "@lib": ["lib/*"],
+      "@nextAPI": ["pages/api/*"],
+      "@pages": ["pages/*"]
     }
   },
   "include": [
