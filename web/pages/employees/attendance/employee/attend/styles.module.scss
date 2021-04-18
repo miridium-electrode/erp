@@ -1,0 +1,14 @@
+.part {
+    display: flex;
+    flex-direction: column;
+    * {
+        margin: .5rem;
+    }
+    button {
+        padding: 3rem 10rem;
+    }
+}
+
+.inputs {
+    width: 50%;
+}
