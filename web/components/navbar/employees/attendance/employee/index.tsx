@@ -6,7 +6,7 @@ function Navbar() {
             {/* the div come first so if floated left 
             it doesn't come after ul (div being block element) */}
             <div>
-                <a href="#">username</a>
+                <a href="/employees/profiles/info">username</a>
                 <a href="/">Logout</a>
             </div>
             <ul>
