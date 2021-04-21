@@ -14,11 +14,13 @@ function Container(props: ProfileProp) {
             </div>
             <style jsx>{`
                 main {
+                    width: 85vw;
+                    height: 85vh;
                     display: grid;
                     grid-template-columns: 1fr 2fr;
                     div {
                         display: flex;
-                        flex-direction: row;
+                        flex-direction: column;
                     }
                 }
             `}</style>
