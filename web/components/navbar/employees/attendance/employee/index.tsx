@@ -7,6 +7,7 @@ function Navbar() {
             it doesn't come after ul (div being block element) */}
             <div>
                 <a href="#">username</a>
+                <a href="/">Logout</a>
             </div>
             <ul>
                 <li>
