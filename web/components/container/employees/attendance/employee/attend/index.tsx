@@ -7,7 +7,7 @@ interface ContainerProp extends BasicProp {
 // TODO: turn this as universal all employees attend page
 
 /**
- * Container for employee attend page
+ * Container for employees attend page
  * @param props 
  * an object that take string and a Component
  * @returns JSX.Element
