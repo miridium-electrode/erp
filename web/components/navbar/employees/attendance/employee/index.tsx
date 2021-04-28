@@ -1,5 +1,9 @@
 import styles from "./styles.module.scss";
 
+/**
+ * A navbar components for employee attendance page
+ * @returns JSX.Element
+ */
 function Navbar() {
     return (
         <nav className={styles.navbar}>
