@@ -2,7 +2,10 @@ import Background from "@components/background";
 import Container from "@components/container/profiles";
 import Navbar from "@components/navbar/employees/attendance/employee";
 
-
+/**
+ * the left side of "employees/profiles/info" page
+ * @returns
+ */
 function Left() {
     return (
         <>
@@ -13,6 +16,10 @@ function Left() {
     );
 }
 
+/**
+ * The right side of "employees/profiles/info" page
+ * @returns 
+ */
 function Right() {
     return (
         <>
@@ -40,6 +47,10 @@ function Right() {
     );
 }
 
+/**
+ * The page of "employees/profiles/info"
+ * @returns 
+ */
 function Info() {
     return (
         <Background>
