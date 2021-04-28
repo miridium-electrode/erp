@@ -1,0 +1,27 @@
+/*
+Styling for Hr employee attendace navbar
+*/
+
+.navbar {
+    width: 100vw;
+    padding: 1rem;
+    div {
+        float: right;
+        text-align: center;
+    }
+    ul {
+        margin: 0 auto;
+        padding: 0;
+        text-align: center;
+        li {
+            /* color: white; */
+            margin: {
+                left: .5rem;
+                right: .5rem;
+            } 
+        }
+    }
+    a {
+        padding: 0 .5rem;        
+    }
+}
