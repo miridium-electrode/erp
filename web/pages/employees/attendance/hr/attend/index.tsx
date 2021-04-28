@@ -3,6 +3,12 @@ import Container from "@components/container/employees/attendance/employee/atten
 import styles from "./styles.module.scss";
 import Navbar from "@components/navbar/employees/attendance/hr";
 
+// TODO: Merge this with "pages/employees/attendance/employees/attend" page
+
+/**
+ * the "employees/attendance/hr/attend" page
+ * @returns JSX.Element
+ */
 function Attend() {
     return (
         <Background>
