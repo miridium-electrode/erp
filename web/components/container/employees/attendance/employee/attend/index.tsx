@@ -1,6 +1,6 @@
 import { BasicProp } from '@lib/types';
 
-// TODO: turn this as universal all employees attend page
+// TODO: turn this as universal all employee attend page
 
 /**
  * Container for employees attend page
