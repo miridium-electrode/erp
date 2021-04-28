@@ -3,6 +3,10 @@ import Container from "@components/container/employees/attendance/employee/atten
 import styles from "./styles.module.scss";
 import Navbar from "@components/navbar/employees/attendance/employee";
 
+/**
+ * The employee attendance page
+ * @returns JSX.Element
+ */
 function Attend() {
     return (
         <Background>
