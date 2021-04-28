@@ -1,9 +1,5 @@
 import { BasicProp } from '@lib/types';
 
-interface ContainerProp extends BasicProp {
-    forPage?: string;
-}
-
 // TODO: turn this as universal all employees attend page
 
 /**
@@ -12,7 +8,7 @@ interface ContainerProp extends BasicProp {
  * an object that take string and a Component
  * @returns JSX.Element
  */
-function Container(props: ContainerProp) {
+function Container(props: BasicProp) {
     return (
         <div>
             {props.children}
