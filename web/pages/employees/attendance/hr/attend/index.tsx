@@ -1,7 +1,7 @@
 import Background from "@components/background";
 import Container from "@components/container/employees/attendance/employee/attend";
 import styles from "./styles.module.scss";
-import Navbar from "@components/navbar/employees/attendance/employee";
+import Navbar from "@components/navbar/employees/attendance/hr";
 
 function Attend() {
     return (
