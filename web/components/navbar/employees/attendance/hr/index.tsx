@@ -12,8 +12,12 @@ function Navbar(){
                 <a href="/">Logout</a>
             </div>
             <ul>
-                <li>Absensi</li>
-                <li>Rules</li>
+                <li>
+                    <a href="/employees/attendance/hr/attend">Absensi</a>
+                </li>
+                <li>
+                    <a href="">Rules</a>
+                </li>
                 <li>Company</li>
                 <li>Users</li>
                 <li>Laporan</li>
