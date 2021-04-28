@@ -1,10 +1,13 @@
 import { BasicProp } from '@lib/types';
 
-interface ContainerProp extends BasicProp {
-    forPage?: string;
-}
-
-function Container(props: ContainerProp) {
+/**
+ * container for employees attendance report, 
+ * the name of the page is lists  
+ * @param props 
+ * take a Component as a children
+ * @returns JSX.Element 
+ */
+function Container(props: BasicProp) {
     return (
         <div>
             {props.children}
