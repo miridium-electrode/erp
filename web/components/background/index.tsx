@@ -1,5 +1,11 @@
 import { BasicProp } from '@lib/types';
 
+/**
+ * A universal background Component
+ * @param props
+ * a property for this element children
+ * @returns JSX.Element
+ */
 function Background(props: BasicProp) {
     return (
         <div>
