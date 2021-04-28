@@ -2,6 +2,10 @@ import Background from '@components/background';
 import Container from '@components/container/sign-star';
 import styles from './styles.module.scss';
 
+/**
+ * Login/Sign-in page for the whole application
+ * @returns JSX.Element
+ */
 function Login() {
     return (
         <Background>
