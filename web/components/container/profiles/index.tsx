@@ -3,6 +3,13 @@ interface ProfileProp {
     right: React.ReactFragment;
 }
 
+/**
+ * A container that display employees account and personal
+ * info settings
+ * @param props 
+ * take to react fragment
+ * @returns JSX.Elements
+ */
 function Container(props: ProfileProp) {
     return (
         <main>
