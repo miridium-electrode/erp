@@ -4,6 +4,10 @@ import Navbar from "@components/navbar/employees/attendance/employee";
 
 import styles from "./styles.module.scss";
 
+/**
+ * the "employees/attendance/employee/lists" page
+ * @returns JSX.Element
+ */
 function Lists() {
     return (
         <Background>
