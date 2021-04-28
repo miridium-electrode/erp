@@ -4,6 +4,14 @@ interface ContainerProp extends BasicProp {
     forPage?: string;
 }
 
+// TODO: turn this as universal all employees attend page
+
+/**
+ * Container for employee attend page
+ * @param props 
+ * an object that take string and a Component
+ * @returns JSX.Element
+ */
 function Container(props: ContainerProp) {
     return (
         <div>
