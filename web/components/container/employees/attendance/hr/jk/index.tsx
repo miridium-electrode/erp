@@ -12,6 +12,8 @@ function Container_Jadwal_Kerja(props: BasicProp) {
         
             <style jsx>{`
                 div {
+                    width: 85vw;
+                    height: 85vh;
                     display: flex;
                     flex-direction: column;
                 }
