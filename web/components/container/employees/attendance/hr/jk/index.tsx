@@ -5,7 +5,7 @@ import { BasicProp } from "@lib/types"
  * @param props 
  * @returns 
  */
-function JK(props: BasicProp) {
+function Container_Jadwal_Kerja(props: BasicProp) {
     return (
         <div>
             {props.children}
@@ -19,3 +19,5 @@ function JK(props: BasicProp) {
         </div>
     )
 }
+
+export default Container_Jadwal_Kerja;
