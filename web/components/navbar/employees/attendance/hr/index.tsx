@@ -16,7 +16,7 @@ function Navbar(){
                     <a href="/employees/attendance/hr/attend">Absensi</a>
                 </li>
                 <li>
-                    <a href="">Rules</a>
+                    <a href="/employees/attendance/hr/rules">Rules</a>
                 </li>
                 <li>Company</li>
                 <li>Users</li>
