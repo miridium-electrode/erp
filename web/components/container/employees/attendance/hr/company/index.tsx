@@ -14,7 +14,8 @@ function Container(props: BasicProp) {
             <style jsx>{`
                 div {
                     height: 85vh;
-                    weight: 85vw;
+                    width: 85vw;
+                    float: left;
                 }
             `}</style>
         </div>
