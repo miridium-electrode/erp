@@ -1,0 +1,23 @@
+.topmenu {
+	display: flex;
+	flex-direction: row;
+	.redo {
+		margin-left: 10px;
+		&:hover {
+			cursor: pointer;
+		}
+	}
+}
+
+.messagebar {
+	width: 100%;
+	input[type="checkbox"] {
+		margin-right: 10px;
+	}
+	.mtitle {
+		margin-right: 10px;
+	}
+	.mdesc {
+		flex-grow: 4;
+	}
+}
