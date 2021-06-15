@@ -11,10 +11,12 @@ function Container(props: BasicProp) {
 			{props.children}
 
 			<style jsx>{`
-				width: 85vw;
-				height: 85vh;
-				display: flex;
-				flex-direction: column;
+				div {
+					width: 85vw;
+					height: 85vh;
+					display: flex;
+					flex-direction: column;
+				}
 			`}</style>
 		</div>
 	);
