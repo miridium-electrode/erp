@@ -36,4 +36,4 @@ web/.vercel
 session/config.yaml
 session/.env
 session/*.db
-web/.vscode
+**/.vscode
