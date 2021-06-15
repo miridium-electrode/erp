@@ -8,6 +8,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import { faMinus } from "@fortawesome/free-solid-svg-icons";
 
+/**
+ * function for company profile input field
+ * @returns 
+ */
+
 function Company_Profile(){
     const [h, setH] = useState([0]);
 
