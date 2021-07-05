@@ -2,7 +2,9 @@ package utils
 
 import (
 	"fmt"
+	"log"
 	"net/http"
+	"strings"
 	"time"
 )
 
@@ -11,8 +13,8 @@ func CreateID(aType string, r *http.Request) string {
 	nY := time.Now().Year()
 	nM := int(time.Now().Month())
 	nD := time.Now().Day()
-	uid, err := r.Cookie("id");
-	if(err != nil) {
+	uid, err := r.Cookie("id")
+	if err != nil {
 		log.Fatal(err.Error())
 	}
 	fullId := fmt.Sprintf(

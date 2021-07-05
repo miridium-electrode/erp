@@ -8,7 +8,7 @@ import (
 )
 
 // Insert database ignore db framework used
-func Insert(tablename string, rowNames []string, args ...interface{}) {
+func Insert(tablename string, rowNames []string, args interface{}) {
 	db := conn.StartConn()
 	rowString, valueString := queryStringManipulator(rowNames)
 	queryString := fmt.Sprintf("INSERT INTO %s (%s) VALUES (%s)", tablename, rowString, valueString)

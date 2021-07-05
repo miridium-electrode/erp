@@ -37,3 +37,6 @@ session/config.yaml
 session/.env
 session/*.db
 **/.vscode
+
+absensi/.env*
+absensi/.db

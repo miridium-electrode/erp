@@ -1,4 +1,4 @@
-package configHelper
+package confighelper
 
 import (
 	"testing"
