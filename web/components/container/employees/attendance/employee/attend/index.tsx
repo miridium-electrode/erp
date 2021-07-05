@@ -1,0 +1,30 @@
+import { BasicProp } from '@lib/types';
+
+// TODO: turn this as universal all employee attend page
+
+/**
+ * Container for employees attend page
+ * @param props 
+ * an object that take string and a Component
+ * @returns JSX.Element
+ */
+function Container(props: BasicProp) {
+    return (
+        <div>
+            {props.children}
+            
+            <style jsx>{`
+                div {
+                    width: 85vw;
+                    height: 85vh;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    align-items: center;
+                }
+            `}</style>
+        </div>
+    );
+}
+
+export default Container;
