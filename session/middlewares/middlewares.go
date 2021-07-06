@@ -6,7 +6,7 @@ import (
 
 type MiddlewareAggregate func(http.Handler) http.Handler
 
-func Run(next http.Handler, middlewares ...MiddlewareAggregate) http.Handler {
+func RouteWithMiddleware(next http.Handler, middlewares ...MiddlewareAggregate) http.Handler {
 	var midarr []MiddlewareAggregate
 	midarr = append(midarr, middlewares...)
 
