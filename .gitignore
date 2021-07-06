@@ -46,5 +46,5 @@ absensi/*.db
 **/.vscode
 
 # http request
-**/.http
-**/.rest
+**/*.http
+**/*.rest
