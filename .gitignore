@@ -39,8 +39,8 @@ session/.env
 session/*.db
 
 # absensi microservice
-absensi/.env*
-absensi/.db
+absensi/*.env*
+absensi/*.db
 
 # vscode
 **/.vscode
