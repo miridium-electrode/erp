@@ -33,10 +33,18 @@ web/.env.production.local
 # vercel
 web/.vercel
 
+# session microservice
 session/config.yaml
 session/.env
 session/*.db
-**/.vscode
 
+# absensi microservice
 absensi/.env*
 absensi/.db
+
+# vscode
+**/.vscode
+
+# http request
+**/.http
+**/.rest
