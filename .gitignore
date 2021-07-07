@@ -35,8 +35,9 @@ web/.vercel
 
 # session microservice
 session/config.yaml
-session/.env
+session/*.env
 session/*.db
+session/*.txt
 
 # absensi microservice
 absensi/*.env*
